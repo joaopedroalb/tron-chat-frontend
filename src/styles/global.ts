@@ -21,6 +21,8 @@ const GlobalStyle = createGlobalStyle`
     }
     * {
         box-sizing: border-box;
+        list-style: none;
+        
     }
     h1{
         color: blue;
