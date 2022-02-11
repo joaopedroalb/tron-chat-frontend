@@ -1,7 +1,7 @@
-import {} from './style'
+import {ChatBox} from './style'
 
 export default function Chat() {
   return (
-    <div>Chat</div>
+    <ChatBox>Chat</ChatBox>
   )
 }

@@ -1,7 +1,15 @@
-//import {} from './style'
+import {Box} from './style'
 
-export default function LoginWallet() {
+type LoginWalletProps = {
+  handleClick:()=>void 
+  loaded:boolean
+}
+
+export default function LoginWallet(props:LoginWalletProps) {
   return (
-    <div>Login</div>
+    <Box>
+      <button onClick={props.handleClick}>Logar</button>
+      {props.loaded&&<p>Por favor verifique se esta com a extensão do tron link</p>}
+    </Box>
   )
 }
